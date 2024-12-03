@@ -1,0 +1,75 @@
+/*=== header ===*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Ajoute une couleur de fond pour la navbar */
+    padding: 0px 20px; /* Ajoute de l'espacement interne à la navbar */
+}
+
+.menu {
+    font-family: 'Oswald', sans-serif;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0; /* Enlève la marge à droite pour éviter de décaler le dernier élément */
+    padding: 0;
+}
+
+.menu a {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Retire le soulignement des liens */
+    text-transform: uppercase; /* Transforme tout le texte en majuscules */
+    padding: 10px 15px; /* Espacement interne des liens */
+    position: relative;
+}
+
+.menu a.active {
+    color: red; /* Couleur du texte pour le lien actif */
+}
+
+.menu a:hover {
+    color: red; /* Change la couleur en rouge au survol de la souris */
+}
+
+.menu a::after {
+    content: ""; /* Ajoute un pseudo-élément vide pour créer la bordure */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px; /* Épaisseur du trait */
+    background-color: transparent; /* Trait invisible par défaut */
+    transition: background-color 0.3s ease-in-out; /* Animation du changement de couleur */
+}
+
+.menu a.active::after,
+.menu a:hover::after {
+    background-color: red; /* La couleur du trait devient rouge */
+}
+
+/* Style pour le dernier élément du menu (Adhésion) */
+.menu li:last-child {
+    margin-left: auto; /* Pousse le dernier élément vers la droite */
+}
+
+.menu li:last-child a {
+    background-color: #ffffff; /* Couleur de fond pour Adhésion */
+    color: red; /* Couleur du texte */
+    text-align: center;
+    padding: 10px 15px; /* Utilise le même padding que les autres éléments */
+    border-radius: 0; /* Enlève l'arrondi des coins */
+}
+
+.menu li:last-child a:hover {
+    background-color: #FF9999; /* Change la couleur au survol */
+    color: red;
+}
+
+.navbar img {
+    padding-left: 2em; /* Espace à gauche de l'image */
+    height: 100px; /* Hauteur de l'image */
+    max-height: 150px; /* Limite la hauteur de l'image pour s'adapter à la navbar */
+}
+
+/*=== header ===*/

@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.porteOuverte {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/foret.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: center; /* Centre chaque .contenu horizontalement */
+    margin-bottom: 3em;
+}
+
+.trait {
+    height: 2px; /* Épaisseur du trait */
+    background-color: #604E4B; /* Couleur du trait */
+    width: 50%;
+    margin: 0 auto; /* Espacement autour du trait */
+}
+
+.texteAssemblee {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2em;
+    text-align: justify;
+}
+
+.texteAssemblee h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}

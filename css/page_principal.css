@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*=== image d'introduction ===*/
+
+.imagePiste {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*=== image d'introduction ===*/
+
+/*=== Section histoire Club ===*/
+
+.histoireClub {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.enteteHistoireClub {
+    display: flex;
+    align-items: flex-end;
+    gap: 7em;
+    margin: 0 0 9em 3.5em;
+}
+
+.histoireClub p {
+    width: 100%;
+    text-align: justify;
+} 
+
+.histoireClub h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+/*=== Section histoire Club ===*/
+
+/*=== Section Vision du club ===*/
+
+.visionClub {
+    position: relative;
+    background-image: url('../image/fond_bloc_vision.png'); /* Image de fond */
+    background-size: cover; /* L'image couvre tout le conteneur */
+    background-position: center; /* Centrer l'image de fond */
+    padding: 60px 20px 100px 20px;
+    margin: 3em 0 0 0;
+    box-sizing: border-box;
+}
+
+.visionClub .content {
+    position: relative;
+    font-size: 16px;
+    padding: 20px 20px 80px 20px;
+    max-width: 80%; /* Ajuste la largeur du texte */
+    margin: auto; /* Centrer le texte */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.visionClub .content p {
+    width: 60%;  /*Ajuste la largeur du texte selon tes besoins */
+    text-align: justify;
+}
+
+.visionClub .content img {
+    width: 20%; /* Ajuste la largeur de l'image selon tes besoins */
+}
+
+.visionClub .content2 {
+    position: relative;
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+    max-width: 80%; /* Ajuste la largeur du texte */
+    margin: auto; /* Centrer le texte */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.visionClub .content2 img {
+    width: 50%; /* Ajuste la largeur de l'image selon tes besoins */
+}
+
+.visionClub .content2 p {
+    width: 40%; /* Ajuste la largeur du texte selon tes besoins */
+    text-align: justify;
+}
+
+/*=== Section Vision du club ===*/
+
+/*=== BMX section ===*/
+
+.bmxSection {
+    position: relative; /* Pour permettre à l'élément enfant (le texte) de se positionner par rapport à l'image */
+    max-width: 100%;
+    height: auto;
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+.pilote {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titreBMX {
+    position: absolute;
+    bottom: 20px; /* Positionner le texte vers le bas de l'image */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuster pour le centrer */
+    font-family: 'Montserrat', sans-serif; /* Police Montserrat */
+    color: white; /* Couleur blanche */
+    font-size: 2em; /* Ajuster la taille du texte selon ton design */
+    z-index: 1; /* S'assurer que le texte est par-dessus l'image */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/*=== BMX section ===*/

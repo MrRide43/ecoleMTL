@@ -1,0 +1,71 @@
+/*=== Section Carrousel  ===*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 3em 0 3em 0;
+}
+
+.titreCarrousel{
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1em 0 1em 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.carousel-list {
+  display: flex;
+  align-items: center; /* Centre les images verticalement si elles ont des hauteurs différentes */
+  justify-content: space-between; /* Répartit les logos avec un espace entre eux */
+  list-style-type: none; /* Supprime les points de liste */
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: calc(100% / 5); /* Ajuste pour afficher un nombre entier de logos sans coupure */
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 150px; /* Ajuste la hauteur maximale selon tes besoins */
+  object-fit: contain;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  background-color: transparent; /* Enlève la couleur de fond */
+  border: 1px solid #d3d3d3; /* Ajoute une bordure grise claire */
+  color: #d3d3d3; /* Définit la couleur du texte ou des icônes en gris clair */
+  padding: 5px 10px; /* Réduit la taille du bouton */
+  border-radius: 50%; /* Arrondit le bouton pour un style plus moderne */
+  font-size: 18px; /* Ajuste la taille de la flèche */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour l’effet de survol */
+}
+
+.carousel-button:hover {
+  background-color: #f0f0f0; /* Change la couleur de fond en gris clair au survol */
+  color: #888; /* Assombrit la couleur de la flèche au survol */
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/*=== Section Carrousel  ===*/
