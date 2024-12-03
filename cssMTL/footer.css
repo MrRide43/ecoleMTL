@@ -1,0 +1,108 @@
+/* Section Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+footer .logo img {
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.infoSite p {
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .formulaire {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .formulaire h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: auto;
+}
+
+footer .formulaire .trait {
+    width: 50%;
+    height: 1px;
+    background-color: #333;
+    margin: auto;
+}
+
+footer .formulaire p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+footer .formulaire form div {
+    margin-bottom: 15px;
+}
+
+footer .formulaire label {
+    display: none; /* Masquer les labels pour correspondre à l'image */
+}
+
+footer .formulaire input,
+footer .formulaire select,
+footer .formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer .formulaire button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9800;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .formulaire button:hover {
+    background-color: #e68900;
+}
+
+/* Styles spécifiques pour le placeholder dans les champs */
+footer .formulaire input::placeholder,
+footer .formulaire select::placeholder,
+footer .formulaire textarea::placeholder {
+    color: #bbb;
+}

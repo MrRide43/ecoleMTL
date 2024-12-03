@@ -1,0 +1,461 @@
+/* Reset des marges et paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section de base 1e section "hero-section" */
+
+.hero-section {
+    position: relative;
+    height: 70vh; /* Ajuste la hauteur selon tes préférences */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Image de fond */
+.hero-section .diplome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Légère opacité */
+    z-index: 1;
+}
+
+/* Bloc de contenu */
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Titre */
+.hero-section .content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Paragraphe */
+.hero-section .content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Bouton */
+.hero-section .boutonContact {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f5a623; /* Ajuste cette couleur selon celle de ton image précédente */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    width: 50%;
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+.hero-section .boutonContact:hover {
+    background-color: #d58c1e; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Fin Section de base 1e section "hero-section" */
+
+/* Section de base 1e section "qui somme nous" */
+
+.quiSommeNous {
+    width: 60%;
+    margin: auto;
+    padding-top: 4em;
+}
+
+.diplomeEleve {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+aside {
+    position: relative;
+    width: 35%;
+    margin: 1.5em 2em 0em 0em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    padding: 1.5em;
+    float: right;
+    z-index: 2;
+}
+
+aside p {
+    padding: 0.7em;
+    font-size: 15px;
+}
+
+.reussiteQuebec {
+    width: 55%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    position: relative;
+    z-index: 3;
+    padding-top: 20em;
+}
+
+.reussiteQuebec h2 {
+    padding: 1em 1em 1em 0em ;
+}
+
+.boutonCampagne {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f5a623; /* Ajuste cette couleur selon celle de ton image précédente */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 30%;
+    margin-top: 1.3em; /* Centrer horizontalement */
+    display: flex;
+    justify-content: center; /* centre le texte horizontalement */
+    align-items: center; /* centre le texte verticalement */
+}
+
+.boutonCampagne a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.boutonCampagne:hover {
+    background-color: #d58c1e; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Fin Section de base 1e section "qui somme nous" */
+
+/* Section "souvenir impérissable" avec carrousel nom de la classe "textePresentation" */
+
+.carousel-container {
+    position: relative;
+    width: 80%; /* Largeur du carrousel */
+    max-width: 1200px; /* Limite la largeur max pour éviter trop d'étirement */
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 1em; /* Ajoute un espace de 1em entre les images */
+    padding: 0 0.5em; /* Ajoute un petit padding pour les bords gauche et droite */
+}
+
+.carousel-image {
+    width: calc((100% / 3) - (2em / 3)); /* Calcule la largeur en fonction de l'espace entre les images */    
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.textePresentation {
+    text-align: center;
+    margin: auto;
+    padding: 5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textePresentation h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+/* Fin Section "souvenir impérissable" avec carrousel*/
+
+/* Section vidéo de présentation */
+
+.presentationVideo {
+    background-color: #d3d3d3;
+    margin-top: 5em;
+    padding-bottom: 3em;
+}
+
+.video-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.rounded-video {
+    border-radius: 15px;
+    margin-bottom: 3em;
+}
+
+.boutonCampagneVideo {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f5a623; /* Ajuste cette couleur selon celle de ton image précédente */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 15%;
+    margin-top: 1.3em; /* Centrer horizontalement */
+    display: flex;
+    justify-content: center; /* centre le texte horizontalement */
+    align-items: center; /* centre le texte verticalement */
+    margin: auto;
+}
+
+.boutonCampagneVideo a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.boutonCampagneVideo:hover {
+    background-color: #d58c1e; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Fin Section vidéo de présentation */
+
+/* Section Commentaires */
+
+.blocCommentaire {
+    width: 60%;
+    margin: auto;
+    background-color: #f5a623;
+    border-radius: 15px;
+    padding: 2em;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blocCommentaire h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.commentaire {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2em;
+    margin-top: 1em;
+    box-shadow: 5px 5px 10px black;
+}
+
+.photo-profil {
+    width: 100px; /* Taille du conteneur de l'image */
+    height: 100px; /* Taille du conteneur de l'image */
+    overflow: hidden; /* Cache toute partie de l'image qui dépasse */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+}
+
+.photo-profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adapte l'image pour remplir le conteneur sans déformer */
+    display: block; /* Enlève les espaces blancs autour de l'image */
+}
+
+.profilType {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+/* Section Commentaires */
+
+/* Section image avec un trio de diplomé */
+
+
+/* Overlay pour l'opacité blanche */
+
+/* Style pour la section */
+.image-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuste la hauteur selon ton besoin */
+    background-image: url('../image/trioDiplomer.jpg'); /* Remplace par le chemin de ton image */
+    background-size: cover; /* Assure que l'image couvre toute la largeur */
+    background-position: top center; /* Centre l'image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Overlay pour l'opacité blanche */
+.image-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Opacité blanche à 30% */
+}
+
+/* Style pour le titre */
+.section-title {
+    position: relative;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+    z-index: 1; /* Assure que le texte est au-dessus de l'overlay */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre légère sur le texte */
+}
+
+/* Fin Section image avec un trio de diplomé */
+
+/* Section Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+footer .logo img {
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.infoSite p {
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .formulaire {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .formulaire h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: auto;
+}
+
+footer .formulaire .trait {
+    width: 50%;
+    height: 1px;
+    background-color: #333;
+    margin: auto;
+}
+
+footer .formulaire p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+footer .formulaire form div {
+    margin-bottom: 15px;
+}
+
+footer .formulaire label {
+    display: none; /* Masquer les labels pour correspondre à l'image */
+}
+
+footer .formulaire input,
+footer .formulaire select,
+footer .formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer .formulaire button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9800;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .formulaire button:hover {
+    background-color: #e68900;
+}
+
+/* Styles spécifiques pour le placeholder dans les champs */
+footer .formulaire input::placeholder,
+footer .formulaire select::placeholder,
+footer .formulaire textarea::placeholder {
+    color: #bbb;
+}
+

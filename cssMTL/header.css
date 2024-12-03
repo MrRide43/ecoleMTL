@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px; /* Ajoute de l'espacement interne à la navbar */
+}
+
+.navbar img {
+    height: 120px;
+    width: 120px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu a {
+    color: black; /* Couleur du texte */
+    text-decoration: none; /* Retire le soulignement des liens */
+    padding: 10px 15px; /* Espacement interne des liens */
+    position: relative;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.boutonNavbar {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #DD8A0F;
+    border-radius: 10px;
+    background-color: #DD8A0F;
+    padding: 10px;
+    letter-spacing: 2px;
+    
+}
