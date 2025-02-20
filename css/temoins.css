@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.texteTemoins {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 4em;
+}
+
+.texteTemoins h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.texteTemoins p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.texteTemoins h3 {
+    padding-top: 1em;
+}
+
+ul {
+    list-style-position: inside;
+}

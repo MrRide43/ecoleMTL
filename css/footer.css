@@ -1,0 +1,71 @@
+/*=== Footer ===*/
+
+footer {
+    background-color: #604E4B;
+}
+
+.footerBis {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logoFooter {
+    width: 200px;
+}
+
+.contactClub {
+    padding: 20px;
+}
+
+.contactClub img {
+    width: 40px; /* Taille des icônes */
+    height: auto; /* Garde les proportions */
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.contactClub p {
+    display: inline-block;
+    margin: 0; /* Enlève les marges par défaut autour du texte */
+}
+
+.contactClub .contactItem {
+    display: flex;
+    align-items: center; /* Aligne les icônes et le texte verticalement au centre */
+    margin-bottom: 10px; /* Espace entre chaque élément contact */
+}
+
+.lienSociaux img {
+    width: 70px;
+    padding: 15px;
+    transition: filter 0.3s ease; /* Transition pour un effet fluide */
+}
+
+.lienSociaux img:hover {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(5935%) hue-rotate(1deg) brightness(99%) contrast(109%);
+    /* Ce filtre change l'image en rouge, tu peux ajuster cette valeur */
+}
+.footerLinks {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}
+
+/*=== Footer ===*/

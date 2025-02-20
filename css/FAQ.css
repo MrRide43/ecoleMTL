@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.texteFaq {
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.texteFaq p {
+    padding-bottom: 1.5em;
+}
+
+.texteFaq h1 {
+    margin: 3em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.texteFaq h2 {
+    padding-bottom: 1.5em;
+}
+
+.boutonPiste {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 6em;
+    margin-bottom: 9em;
+    padding: 15px;
+    background-color: #604E4B;
+    border: 1px solid #604E4B;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.boutonPiste:hover {
+    animation: float 1.2s ease-in-out infinite; /* Lancer l'animation au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet flottant */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Position de départ et de fin */
+    }
+    50% {
+        transform: translateY(-5px); /* Déplacement vers le haut */
+    }
+}
+
+.boutonPiste a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

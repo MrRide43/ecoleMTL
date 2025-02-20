@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*=== image d'introduction ===*/
+
+.imagePiste {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*=== image d'introduction ===*/
+
+/*=== section entaineur ===*/
+
+.entraineur {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    background-image: url("../image/fond_bloc_vision.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: center; /* Centre chaque .contenu horizontalement */
+}
+
+.entraineur h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2em;
+}
+
+.contenu {
+    font-family: 'Poppins', sans-serif;
+    width: 70%; /* Largeur de chaque contenu individuel */
+    display: flex;
+    align-items: center; /* Centre le texte et l'image à l'intérieur de chaque .contenu */
+    margin: 1em;
+    gap: 20px;
+}
+
+.contenu2 {
+    font-family: 'Poppins', sans-serif;
+    width: 60%; /* Largeur de chaque contenu individuel */
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    align-items: center;
+    margin: 1em;
+    gap: 5em;
+}
+
+.contenu4 {
+    font-family: 'Poppins', sans-serif;
+    width: 70%; /* Largeur de chaque contenu individuel */
+    display: flex;
+    justify-content: space-between;    
+    align-items: center; /* Centre le texte et l'image à l'intérieur de chaque .contenu */
+    margin: 1em;
+    gap: 20px;
+}
+
+/*=== section entaineur ===*/
+
+/*=== section Administration ===*/
+
+.admin {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 2em;
+}
+
+.admin h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 1em 0em 1em 0em;
+}

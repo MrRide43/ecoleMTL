@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.calendrier {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 10em;
+}
+
+.calendrier h2 {
+    padding-bottom: 1em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tokifyCalendar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blocBouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 1px solid #604E4B;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #604E4B;
+
+}
+
+.bouton:hover {
+    animation: float 1.2s ease-in-out infinite; /* Lancer l'animation au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet flottant */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Position de départ et de fin */
+    }
+    50% {
+        transform: translateY(-5px); /* Déplacement vers le haut */
+    }
+}

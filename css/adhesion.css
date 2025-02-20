@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.texteAdhesion {
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 5em;
+    text-align: justify;
+}
+
+.texteAdhesion h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+
+/* css Formulaires */
+
+.form-container {
+    width: 70%;
+    margin: 0 auto;    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Oswald', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-row input,
+input[type="email"],
+textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eaeaea;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.checkbox-section {
+    text-align: center;
+}
+
+.checkbox-section p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.checkbox-section label {
+    margin-right: 15px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #604E4B;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: #ff8a8a;
+}
